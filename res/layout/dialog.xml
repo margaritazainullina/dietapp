@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Energy" />
+
+		<EditText
+            android:id="@+id/energyET"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_alignParentRight="true"/>
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:text="description"
+		    android:width="92dp" />
+
+		<EditText
+            android:id="@+id/descriptionET"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_alignParentRight="true"/>
+	</LinearLayout>
+	
+</LinearLayout>

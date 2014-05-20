@@ -16,7 +16,7 @@ public class Person {
 	private IdealParameters idealParameters;
 	private double percentOfFat;
 
-	enum Sex {
+	public enum Sex {
 		M, F
 	}
 

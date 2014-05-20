@@ -4,9 +4,9 @@ public class Constitution {
 	private int id;
 	private int min_diameter;
 	private int max_diameter;
-	private int desc;
+	private String desc;
 
-	public Constitution(int id, int min_diameter, int max_diameter, int desc) {
+	public Constitution(int id, int min_diameter, int max_diameter, String desc) {
 		super();
 		this.id = id;
 		this.min_diameter = min_diameter;
@@ -38,11 +38,11 @@ public class Constitution {
 		this.max_diameter = max_diameter;
 	}
 
-	public int getDesc() {
+	public String getDesc() {
 		return desc;
 	}
 
-	public void setDesc(int desc) {
+	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 

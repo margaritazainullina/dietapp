@@ -5,14 +5,12 @@ public class Action {
 	private int id;
 	private String desc;
 	private double energy;
-	private Schedule s;
 
-	public Action(int id, String desc, double energy, Schedule s) {
+	public Action(int id, String desc, double energy) {
 		super();
 		this.id = id;
 		this.desc = desc;
 		this.energy = energy;
-		this.s = s;
 	}
 
 	public int getId() {
@@ -39,12 +37,7 @@ public class Action {
 		this.energy = energy;
 	}
 
-	public Schedule getS() {
-		return s;
+	public String toString() {
+		return "energy " + energy + ", desc" + desc;
 	}
-
-	public void setS(Schedule s) {
-		this.s = s;
-	}
-
 }
