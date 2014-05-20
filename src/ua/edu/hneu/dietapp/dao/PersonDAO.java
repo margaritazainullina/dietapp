@@ -17,9 +17,12 @@ public class PersonDAO extends ContentProvider {
 
 	public static String TABLE_NAME = "person";
 	public static final String ID = "_id";
+	public static final String HIP_CIRC = "hip_circ";
+	public static final String WRIST_CIRC = "wrist_circ";
+	public static final String WAIST_CIRC = "waist_circ";
 	public static final String RT_ID = "ration_type_id";
 	public static final String DIET_ID = "diet_id";
-	public static final String CONSTITUTION_ID = "constitution_id";
+	public static final String C_ID = "constitution_id";
 	public static final String IDEALPARAMETERS_ID = "idealparameters_id";
 	public static final String NAME = "name";
 	public static final String AGE = "age";
@@ -29,7 +32,7 @@ public class PersonDAO extends ContentProvider {
 	public static final String PERCENT_FAT = "percent_fat";
 
 	public static final Uri CONTENT_URI = Uri
-			.parse("content://ua.edu.hneu.dietapp/diet");
+			.parse("content://ua.edu.hneu.dietapp.personprovider/diet");
 	public static final int URI_CODE = 1;
 	public static final int URI_CODE_ID = 2;
 
@@ -50,7 +53,7 @@ public class PersonDAO extends ContentProvider {
 		mContactMap.put(RT_ID, RT_ID);
 		mContactMap.put(NAME, NAME);
 		mContactMap.put(DIET_ID, DIET_ID);
-		mContactMap.put(CONSTITUTION_ID, CONSTITUTION_ID);
+		mContactMap.put(C_ID, C_ID);
 		mContactMap.put(IDEALPARAMETERS_ID, IDEALPARAMETERS_ID);
 		mContactMap.put(AGE, AGE);
 		mContactMap.put(SEX, SEX);

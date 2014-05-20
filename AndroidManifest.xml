@@ -13,6 +13,51 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.ActionDAO"
+            android:authorities="ua.edu.hneu.dietapp.actionprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.ConstitutionDAO"
+            android:authorities="ua.edu.hneu.dietapp.constitutionprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.DietDAO"
+            android:authorities="ua.edu.hneu.dietapp.dietprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.DishDAO"
+            android:authorities="ua.edu.hneu.dietapp.dishprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.IdealParametersDAO"
+            android:authorities="ua.edu.hneu.dietapp.idealparametersprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.PersonDAO"
+            android:authorities="ua.edu.hneu.dietapp.personprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.ProductDAO"
+            android:authorities="ua.edu.hneu.dietapp.productprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.RationDAO"
+            android:authorities="ua.edu.hneu.dietapp.rationprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.RationTypeDAO"
+            android:authorities="ua.edu.hneu.dietapp.rationtypeprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.ScheduleDAO"
+            android:authorities="ua.edu.hneu.dietapp.scheduleprovider" >
+        </provider>
+        <provider
+            android:name="ua.edu.hneu.dietapp.dao.TypeProductDAO"
+            android:authorities="ua.edu.hneu.dietapp.typeproductprovider" >
+        </provider>
+
         <activity
             android:name="ua.edu.hneu.dietapp.MainActivity"
             android:label="@string/app_name" >

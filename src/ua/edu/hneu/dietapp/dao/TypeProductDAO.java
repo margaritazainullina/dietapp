@@ -22,7 +22,7 @@ public class TypeProductDAO extends ContentProvider {
 	public static final String DESC = "desc";
 
 	public static final Uri CONTENT_URI = Uri
-			.parse("content://ua.edu.hneu.dietapp/diet");
+			.parse("content://ua.edu.hneu.dietapp.typeproductprovider/diet");
 	public static final int URI_CODE = 1;
 	public static final int URI_CODE_ID = 2;
 

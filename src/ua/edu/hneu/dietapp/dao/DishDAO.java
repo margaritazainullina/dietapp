@@ -24,7 +24,7 @@ public class DishDAO extends ContentProvider {
 	public static final String PHOTO = "photo";
 
 	public static final Uri CONTENT_URI = Uri
-			.parse("content://ua.edu.hneu.dietapp/diet");
+			.parse("content://ua.edu.hneu.dietapp.dishprovider/diet");
 	public static final int URI_CODE = 1;
 	public static final int URI_CODE_ID = 2;
 

@@ -21,10 +21,11 @@ public class IdealParametersDAO extends ContentProvider {
 	public static final String MAX_HEIGHT = "max_height";
 	public static final String MIN_WEIGHT = "min_weight";
 	public static final String MAX_WEIGHT = "max_weight";
+	public static final String C_ID = "constitution_id";
 	public static final String NAME = "name";
 
 	public static final Uri CONTENT_URI = Uri
-			.parse("content://ua.edu.hneu.dietapp/diet");
+			.parse("content://ua.edu.hneu.dietapp.idealparametersprovider/diet");
 	public static final int URI_CODE = 1;
 	public static final int URI_CODE_ID = 2;
 
@@ -46,6 +47,7 @@ public class IdealParametersDAO extends ContentProvider {
 		mContactMap.put(MAX_HEIGHT, MAX_HEIGHT);
 		mContactMap.put(MIN_WEIGHT, MIN_WEIGHT);
 		mContactMap.put(MAX_WEIGHT, MAX_WEIGHT);
+		mContactMap.put(C_ID, C_ID);
 		mContactMap.put(NAME, NAME);
 	}
 

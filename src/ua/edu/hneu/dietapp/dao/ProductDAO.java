@@ -23,9 +23,10 @@ public class ProductDAO extends ContentProvider {
 	public static final String CARBOHYDRATES = "carbohydrates";
 	public static final String FAT = "fat";
 	public static final String CALORIES = "calories";
+	public static final String PRICE = "price";
 
 	public static final Uri CONTENT_URI = Uri
-			.parse("content://ua.edu.hneu.dietapp/diet");
+			.parse("content://ua.edu.hneu.dietapp.productprovider/diet");
 	public static final int URI_CODE = 1;
 	public static final int URI_CODE_ID = 2;
 
@@ -49,6 +50,7 @@ public class ProductDAO extends ContentProvider {
 		mContactMap.put(CARBOHYDRATES, CARBOHYDRATES);
 		mContactMap.put(FAT, FAT);
 		mContactMap.put(CALORIES, CALORIES);		
+		mContactMap.put(PRICE, PRICE);	
 	}
 
 	public String getDbName() {

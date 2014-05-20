@@ -17,12 +17,12 @@ public class ScheduleDAO extends ContentProvider {
 
 	public static String TABLE_NAME = "schedule";
 	public static final String ID = "_id";
-	public static final String RAT_SCH_ID = "ration_schedule_id";
+	public static final String A_ID = "action_id";
 	public static final String TIME = "time";
 	public static final String DAY = "day";
 
 	public static final Uri CONTENT_URI = Uri
-			.parse("content://ua.edu.hneu.dietapp/diet");
+			.parse("content://ua.edu.hneu.dietapp.scheduleprovider/diet");
 	public static final int URI_CODE = 1;
 	public static final int URI_CODE_ID = 2;
 
@@ -40,7 +40,7 @@ public class ScheduleDAO extends ContentProvider {
 
 		mContactMap = new HashMap<String, String>();
 		mContactMap.put(DietDbHelper._ID, DietDbHelper._ID);
-		mContactMap.put(RAT_SCH_ID, RAT_SCH_ID);
+		mContactMap.put(A_ID, A_ID);
 		mContactMap.put(TIME, TIME);
 		mContactMap.put(DAY, DAY);
 	}
